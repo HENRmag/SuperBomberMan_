@@ -51,14 +51,12 @@ public class PlayerController : MonoBehaviour
 
         if (inputs != Vector3.zero)
         {
-            animator.SetBool("andando", true);
-            animator.Play("Andando");
+            animator.SetBool("Andando", true);
             transform.forward = inputs;
         }
         else
         {
-            animator.SetBool("andando", false);
-            animator.Play("Parado");
+            animator.SetBool("Andando", false);
         }
     }
     void SpawnBomb()
